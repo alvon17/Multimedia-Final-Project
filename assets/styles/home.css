@@ -1,0 +1,493 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body
+{
+    color: #788896;
+}
+
+.dark-mode 
+{
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+#darkBtn
+{
+    cursor: pointer;
+}
+
+.top
+{
+    width: 100%;
+    height: 2vw;
+    background-color: #9eadba;
+}
+
+.dark-mode .top
+{
+    width: 100%;
+    height: 2vw;
+    background-color: #ffffff;
+}
+
+.top .kumpul
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 3vw;
+    margin-left: 0.5vw;
+}
+
+.top .kumpul .point
+{
+    height: 0.7vw;
+    width: 0.7vw;
+    border-radius: 100%;
+    background-color: #8f9eac;
+}
+
+.navbar
+{
+    width: 100%;
+    height: 6vw;
+    border-bottom: 0.2vw solid #9eadba;
+    display: flex;
+    align-items: center;
+}
+
+.dark-mode .navbar
+{
+    width: 100%;
+    height: 6vw;
+    border-bottom: 0.2vw solid #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.logo
+{
+    display: flex;
+    justify-content: center;
+    width: 10vw;
+}
+
+.logo img
+{
+    width: 5vw;
+}
+
+.brand
+{
+    width: 50vw;
+}
+
+.brand p
+{
+    text-align: left;
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+
+.button
+{
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+    margin-right: 2vw;
+}
+
+.button a
+{
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+    text-decoration: none;
+    border: 0.2vw solid #c3cfd9;
+    font-weight: bold;
+    color: #c3cfd9;
+    padding: 0.25vw 1vw 0.25vw 1vw;
+    border-radius: 0.3vw;
+}
+
+.dark-mode .button a
+{
+    color: #ffffff;
+    border: 0.2vw solid #ffffff;
+}
+
+.active
+{
+    border: 0.1vw solid #6558f5 !important;
+    background: #6558f5;
+    color: white !important;
+}
+
+.dark-mode .active
+{
+    border: 0.1vw solid red !important;
+    background: red;
+    color: white !important;
+}
+
+.slideshow-container 
+{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 3vw;
+}
+
+/* Hide the images by default */
+.mySlides 
+{
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next 
+{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next 
+{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover 
+{
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text 
+{
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext 
+{
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.dot-container 
+{
+    text-align:center; 
+    border-bottom: 0.2vw solid #9eadba; 
+    padding-bottom: 3vw;
+}
+
+.dot 
+{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dark-mode .dot 
+{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover 
+{
+    border: 0.1vw solid #6558f5 !important;
+    background: #6558f5;
+    color: white !important;
+}
+
+.dark-mode .active, .dot:hover 
+{
+    border: 0.1vw solid red !important;
+    background: red;
+    color: white !important;
+}
+
+/* Fading animation */
+.fade 
+{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade 
+{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.content1
+{
+    display: flex;
+    align-items: center;
+    height: 30vw;
+    border-bottom: 0.2vw solid #9eadba;
+}
+
+.dark-mode .content1
+{
+    display: flex;
+    align-items: center;
+    height: 30vw;
+    border-bottom: 0.2vw solid #ffffff;
+}
+
+.content1 .gambar
+{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gambar img
+{
+    width: 90%;
+}
+
+.content1 .deskripsi1
+{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    height: 100%;
+    width: 46%;
+    justify-content: center;
+}
+
+.deskripsi1 p
+{
+    padding-right: 1.25vw;
+    padding-left: 1vw;
+    border-right: 0.65vw solid #8dd7cf;
+    font-weight: bold;
+    font-size: 1.25vw;
+    line-height: 2vw; 
+}
+
+.deskripsi1 a
+{
+    font-size: 1vw;
+    text-decoration: none;
+    border: 0.1vw solid #6558f5;
+    background: #6558f5;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.3vw;
+    padding: 0.4vw 0.8vw 0.4vw 0.8vw;
+}
+
+.dark-mode .deskripsi1 a
+{
+    font-size: 1vw;
+    text-decoration: none;
+    border: 0.1vw solid red;
+    background: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.3vw;
+    padding: 0.4vw 0.8vw 0.4vw 0.8vw;
+}
+
+.content1 .deskripsi1 .learn
+{
+    justify-content: right;
+    display: flex;
+    align-items: center;
+    height: 5vw;
+    margin-right: 5vw;
+}
+
+.content2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vw;
+    border-bottom: 0.2vw solid #9eadba;
+}
+
+.dark-mode .content2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vw;
+    border-bottom: 0.2vw solid #ffffff;
+}
+
+.deskripsi2
+{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: 100%;
+    width: 46%;
+    justify-content: center;
+}
+
+.deskripsi2 p
+{
+    padding-left: 1.25vw;
+    padding-right: 1vw;
+    border-left: 0.65vw solid #8dd7cf;
+    font-weight: bold;
+    font-size: 1.25vw;
+    line-height: 2vw;
+}
+
+.video
+{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video img {
+    width: 90%;
+}
+
+.content2 .deskripsi2 .watch {
+    justify-content: left;
+    display: flex;
+    align-items: center;
+    height: 5vw;
+    margin-left: 5vw;
+}
+
+.deskripsi2 a {
+    font-size: 1vw;
+    text-decoration: none;
+    border: 0.1vw solid #6558f5;
+    background: #6558f5;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.3vw;
+    padding: 0.4vw 0.8vw 0.4vw 0.8vw;
+}
+
+.dark-mode .deskripsi2 a {
+    font-size: 1vw;
+    text-decoration: none;
+    border: 0.1vw solid red;
+    background: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.3vw;
+    padding: 0.4vw 0.8vw 0.4vw 0.8vw;
+}
+
+.team
+{
+    border-bottom: 0.2vw solid #9eadba;
+}
+
+.dark-mode .team
+{
+    border-bottom: 0.2vw solid #ffffff;
+}
+
+.team p
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vw;
+    margin-top: 3vw;
+}
+
+.member
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vw;
+}
+
+.orang
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.orang img
+{
+    width: 10vw;
+}
+
+.orang p
+{
+    font-size: 1.2vw;
+}
+
+.kampus
+{
+    font-size: 1.5vw;
+    margin-top: 3vw;
+    margin-left: 3vw;
+    margin-bottom: 3vw;
+    font-weight: bold
+}
+
+.alamat
+{
+    font-size: 1.1vw;
+    margin-left: 3vw;
+}
+
+.copyright
+{
+    font-size: 1vw;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}

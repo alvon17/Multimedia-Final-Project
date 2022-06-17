@@ -1,0 +1,215 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body
+{
+    color: #788896;
+}
+
+.dark-mode 
+{
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+#darkBtn
+{
+    cursor: pointer;
+}
+
+.top {
+    width: 100%;
+    height: 2vw;
+    background-color: #9eadba;
+}
+
+.dark-mode .top {
+    width: 100%;
+    height: 2vw;
+    background-color: #ffffff;
+}
+
+.top .kumpul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 3vw;
+    margin-left: 0.5vw;
+}
+
+.top .kumpul .point {
+    height: 0.7vw;
+    width: 0.7vw;
+    border-radius: 100%;
+    background-color: #8f9eac;
+}
+
+.navbar {
+    width: 100%;
+    height: 6vw;
+    border-bottom: 0.2vw solid #9eadba;
+    display: flex;
+    align-items: center;
+}
+
+.dark-mode .navbar {
+    width: 100%;
+    height: 6vw;
+    border-bottom: 0.2vw solid #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 10vw;
+}
+
+.logo img {
+    width: 5vw;
+}
+
+.brand 
+{
+    width: 50vw;
+}
+
+.brand p 
+{
+    text-align: left;
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+
+.button {
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+    margin-right: 2vw;
+}
+
+.button a {
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+    text-decoration: none;
+    border: 0.2vw solid #c3cfd9;
+    font-weight: bold;
+    color: #c3cfd9;
+    padding: 0.25vw 1vw 0.25vw 1vw;
+    border-radius: 0.3vw;
+}
+
+.dark-mode .button a
+{
+    color: #ffffff;
+    border: 0.2vw solid #ffffff;
+}
+
+.active {
+    border: 0.1vw solid #6558f5 !important;
+    background: #6558f5;
+    color: white !important;
+}
+
+.dark-mode .active
+{
+    border: 0.1vw solid red !important;
+    background: red;
+    color: white !important;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    margin-left: 3vw;
+    height: 8vw;
+    font-weight: bold;
+}
+
+.subtitle a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 3vw;
+    color: #c3cfd9;
+    text-decoration: none;
+}
+
+.dark-mode .subtitle a
+{
+    border: none;
+    color: #ffffff;
+}
+
+.title .aktif {
+    border-bottom: 0.2vw solid #9eadba;
+}
+
+.team {
+    border-bottom: 0.2vw solid #9eadba;
+}
+
+.dark-mode .team {
+    border-bottom: 0.2vw solid #ffffff;
+}
+
+.team p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vw;
+    margin-top: 3vw;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vw;
+}
+
+.orang {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.orang img {
+    width: 10vw;
+}
+
+.orang p {
+    font-size: 1.2vw;
+}
+
+.kampus {
+    font-size: 1.5vw;
+    margin-top: 3vw;
+    margin-left: 3vw;
+    margin-bottom: 3vw;
+    font-weight: bold
+}
+
+.alamat {
+    font-size: 1.1vw;
+    margin-left: 3vw;
+}
+
+.copyright {
+    font-size: 1vw;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}

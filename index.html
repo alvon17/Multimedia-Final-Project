@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    <nav>
+        <div class="top">
+            <div class="kumpul">
+                <div class="point"></div>
+                <div class="point"></div>
+                <div class="point"></div>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="brand">
+                <p> CDev </p>
+            </div>
+            <div class="button">
+                <a href="index.html" class="active"> HOME </a>
+                <a href="sinopsis.html"> ABOUT US </a>
+                <a href="movie.html"> MOVIE </a>
+                <a id="darkBtn" onclick="darkmode()"> SWITCH MODE </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+                <img src="images/1.png" style="width:100%">
+            <div class="text"></div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+                <img src="images/2.png" style="width:100%;">
+            <div class="text"></div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+                <img src="images/3.png" style="width:100%">
+            <div class="text"></div>
+        </div>
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div>
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <div class="content1">
+        <div class="gambar">
+            <img src="images/Home1.jpg" alt="">
+        </div>
+        <div class="deskripsi1">
+            <p> 
+                Apakah kamu ingin membuat program yang menarik dengan bahasa C? Tetapi kamu tidak tahu harus membuat program apa. Lihatlah artikel berikut ini, siapa tahu kamu sangat terinspirasi
+            </p>
+            <div class="learn">
+                <a href="https://www.a1k0n.net/2011/07/20/donut-math.html" target="_blank">LEARN MORE</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content2">
+        <div class="deskripsi2">
+            <p>
+                Kamu sedang bosan? Atau mungkin bingung tentang kodinganmu? Lihatlah video berikut, mungkin saja dapat mengembalikan mood mu. Aku yakin kamu sangat menyukainya
+            </p>
+            <div class="watch">
+                <a href="movie.html">WATCH MORE</a>
+            </div>
+        </div>
+        <div class="video">
+            <img src="images/Konten .png" alt="">
+        </div>
+    </div>
+    
+    <footer>
+        <div class="kampus">
+            BINUS UNIVERSITY
+        </div>
+        <div class="alamat">
+            Jl. K. H. Syahdan No. 9, Kemanggisan, Palmerah <br>
+            Jakarta 11480 Indonesia <br>
+            Phone +62 21 534 5830, +62 21 535 0660 <br>           
+            Fax +62 21 530 0244
+        </div>
+        <div class="copyright">
+            Copyright © 2022 CDev All Rights Reserved
+        </div>
+    </footer>
+    
+    <script src="assets/js/darkMode.js"></script>
+    <script src="assets/js/slider.js"></script> 
+</body>
+</html>
